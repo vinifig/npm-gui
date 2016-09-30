@@ -1,0 +1,9 @@
+{
+  "name": "npmgui",
+  "version": "0.0.0",
+  "description": "npmgui",
+  "main": "main.js",
+  "dependencies": {
+    "electron-titlebar-windows": "^2.1.0"
+  }
+}

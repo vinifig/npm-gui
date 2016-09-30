@@ -1,0 +1,54 @@
+<div class="window">
+  <div class="window-content">
+    <div class="pane-group">
+      <div class="pane-sm sidebar">
+        <ul class="list-group">
+          <li class="list-group-header">
+            <input class="form-control" type="text" placeholder="Search for some project">
+          </li>
+          <li  ng-repeat="proj in projects" ng-click="changeProject($index)" class="list-group-item">
+            <img class="img-circle media-object pull-left" src="/assets/img/avatar.jpg" width="32" height="32">
+            <div class="media-body">
+              <strong>{{proj.title}}</strong>
+              <p>{{proj.description}}</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="pane content">
+        <form>
+          <div class="form-group">
+            <label>Project Title</label>
+            <input type="text" class="form-control" name="title" ng-model="project.title" placeholder="Title">
+          </div>
+          <div class="form-group">
+            <label>Author</label>
+            <input type="text" class="form-control" placeholder="Author" ng-model="project.author" name="author-name">
+          </div>
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" class="form-control" placeholder="E-mail" ng-model="project.email" name="author-email">
+          </div>
+          <div class="form-group">
+            <label>Project Path</label>
+            <div class="form-actions">
+              <button type="submit" ng-click="pickFolder()" class="btn btn-form btn-primary">Select Folder</button>
+              <span ng-bind='project.path'></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Description</label>
+            <textarea class="form-control" ng-model="project.description" name="description" rows="3"></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-form btn-primary">Save</button>
+          </div>
+        </form>
+        <div class="inner pane content">
+          {{project}}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="app">
+<head>
+    <title>NPM Gui</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!-- build:css assets/css/app.css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../bower_components/photon/dist/css/photon.min.css" />
+    <!-- endbuild -->
+
+</head>
+<body>
+    <!-- build:js scripts/windows.js -->
+    <!-- <script src="./scripts/windows.js"></script> -->
+    <!-- endbuild -->
+    <ng-view></ng-view>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_HERE"></script> abaixo uma api velha minha -->
+    <!-- build:js scripts/vendor.js -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <!-- endbuild -->
+    <!-- build:app scripts/app.js -->
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/app/baseController.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

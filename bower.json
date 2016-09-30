@@ -1,0 +1,15 @@
+{
+  "name": "npmgui",
+  "version": "0.0.0",
+  "description": "npmgui",
+  "main": "app/main.js",
+  "author": {
+    "name": "vinifig",
+    "email": "vinifig@hotmail.com"
+  },
+  "dependencies": {
+    "angular": "~1.4.4",
+    "angular-route": "~1.4.4",
+    "photon": "^0.1.2-alpha"
+  }
+}
